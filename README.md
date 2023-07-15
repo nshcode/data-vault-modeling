@@ -3,9 +3,12 @@
 ## Introduction
 
 The repository contains the SQL scripts for creating a Data Vault model
-for a PostgreSQL demo database available at https://postgrespro.com/community/demodb 
+for a PostgreSQL demo database available at https://postgrespro.com/community/demodb. 
 The er-diagrams and some SQL script contained here are accompanying material 
-for the article Practical Introduction to Data Vault Modeling 
+for the article 
+
+[Practical Introduction to Data Vault Modeling](https://medium.com/@nuhad.shaabani/practical-introduction-to-data-vault-modeling-1c7fdf5b9014)
+
 published on medium.
 
 ## Structure
