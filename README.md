@@ -20,12 +20,16 @@ The zip file bookings-demo-small-en contains the script for creating the small v
 1. Download and unzip data-vault-modelling,zip
 2. CD into directory with that file. 
 3. Install the small version of the demo database
- psql -f bookings-demo-mall-en -U postgres
+   - psql -f bookings-demo-mall-en/demo-small-en-20170815 -U postgres
 
+4. Install Version 1
+   - psql -f dv-version1/create_version1_tables.sql -U postgres -d demo
+   - psql -f dv-version1/load_version1_tables.sql -U postgres -d demo
+     
+   The tables of Version 1 will be created in a new schema named dv. If the schema dv already exists, it will be dropped. 
 
-psql -f dv-version1/create_version1_tables.sql -U postgres -d demo
-psql -f dv-version1/load_version1_tables.sql -U postgres -d demo
-
-psql -f dv-version2/create_version2_tables.sql -U postgres -d demo
-psql -f dv-version2/load_version2_tables.sql -U postgres -d demo
-
+5. Install Version 2
+   - psql -f dv-version2/create_version2_tables.sql -U postgres -d demo
+   - psql -f dv-version2/load_version2_tables.sql -U postgres -d demo
+     
+  The tables of Version 2 will be created in a new schema named dv1. If the schema dv1 already exists, it will be dropped. 
